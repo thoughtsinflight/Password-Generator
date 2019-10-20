@@ -27,15 +27,16 @@
                         <hr>
                         <form>
                             <div class="form-group">
+                                <!--Where the Password Will be Displayed-->
                                 <textarea class="form-control text-center text-muted dotted"
-                                    id="exampleFormControlTextarea1" rows="8">Your Secure Password</textarea>
+                                    id="exampleFormControlTextarea1" id="passId" rows="8">Your Secure Password</textarea>
                             </div>
                             <hr>
                         </form>
                         <div class="row">
                             <!--Button for Generating a Password-->
                             <div class="col d-flex">
-                                <button type="button" class="btn btn-danger btn-lg rounded-pill">Generate
+                                <button type="button" class="btn btn-danger btn-lg rounded-pill" id="genButton">Generate
                                     Password</button>
                             </div>
                             <!--Button for Coping Password to the User's Clipboard-->
@@ -65,4 +66,4 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 
