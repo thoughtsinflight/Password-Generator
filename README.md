@@ -10,3 +10,7 @@
     Bootstrap was FAR easier this time around and I'm very please with how the page looks and its responsiveness.
 # Conclusion
     My take away from this project is; I really wish that I had someone to bounce ideas off of. Several times I felt like I was on the right track but couldn't quite piece it together and just ended up with subpar code. I really believe that at least talking it over with classmates would have help formulate ideas. Its tough to do this on your own when you are so unsure of how it will work and what to do when it doesn't.
+# Link
+    https://thoughtsinflight.github.io/passwordGenerator/
+# Image
+    ![Password Generator](https://www.imgur.com/ujcJc27)
