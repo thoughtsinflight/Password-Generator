@@ -19,12 +19,6 @@ var notCap = ["q", "w", "e", "r", "y", "u", "i", "o", "p", "a", "s", "d", "f", "
     1, 2, 3, 4, 5, 6, 7, 8, 9, 0,
     "!", "@", "#", "$", "%", "^", "&", "*"]
 
-
-
-
-
-
-
 if (askNum === false) {
     for (var i = 0; i < askLength; i++) {
         var passDone = notNum[Math.floor(Math.random() * notNum.length)];
