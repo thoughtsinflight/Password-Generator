@@ -14,28 +14,34 @@ document.getElementById("genButton").addEventListener("click",function(){
     var passpass = [] //to return the loops to user
     
     // codes for the different conditions where is the user wants the characters it will push into the passpass array.
-    // if (askLength < 8 || askLength >)
-    if (askSpecial){
-        passpass.push(passSym)
+    if (askLength >= 8 && askLength <= 128){
+
+        if (askSpecial){
+            passpass.push(passSym)
+        }
+        if (askLower){
+            passpass.push(passLow)
+        }
+        if (askUpper){
+            passpass.push(passUp)
+        }
+        if (askNum){
+            passpass.push(passNum)
+        }
+        console.log(passpass)
+        // a loop for getting the password.
+        var password =''
+        for (let i = 0; i < askLength; i++) {
+            var littleboi = Math.floor(Math.random() * passpass.length);
+             password += passpass[littleboi][Math.floor(Math.random() * passpass[littleboi].length)];
+        }
+        console.log(password)
+        document.getElementById("passId").value = password
     }
-    if (askLower){
-        passpass.push(passLow)
+    else {
+        alert("Please pick a number between 8 and 128")
     }
-    if (askUpper){
-        passpass.push(passUp)
-    }
-    if (askNum){
-        passpass.push(passNum)
-    }
-    console.log(passpass)
-    // a loop for getting the password.
-    var password =''
-    for (let i = 0; i < askLength; i++) {
-        var littleboi = Math.floor(Math.random() * passpass.length);
-         password += passpass[littleboi][Math.floor(Math.random() * passpass[littleboi].length)];
-    }
-    console.log(password)
-    document.getElementById("passId").value = password
+
 } ) 
 
 
